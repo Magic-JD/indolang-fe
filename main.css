@@ -1,0 +1,27 @@
+:root {
+    --maroon: #682100;
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: helvetica;
+    white-space: pre-wrap;
+  }
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+  }
+  
+  .list {
+    list-style: square;
+  }
+  
+  #msg {
+    font-family: monospace;
+  }
