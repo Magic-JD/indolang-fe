@@ -39,8 +39,8 @@ function callToGetDictionary(){
 
 function getCorrectLanguage(){
     if(english){
-        return fetch('http://192.168.0.175:8080/dictionary/english', config)
+        return fetch('https://indolang.herokuapp.com/dictionary/english', config)
     } else {
-        return fetch('http://192.168.0.175:8080/dictionary/indonesian', config)
+        return fetch('https://indolang.herokuapp.com/dictionary/indonesian', config)
     }
 }

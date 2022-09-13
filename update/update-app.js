@@ -26,7 +26,7 @@ function updateDictionary(englishWord, indonesianWord){
         indonesianWords: [indonesianWord]
     }
     configPost.body = JSON.stringify(json);
-    fetch('http://192.168.0.175:8080/update/user', configPost)
+    fetch('https://indolang.herokuapp.com/update/user', configPost)
         .then((response) => response.text())
         .then((verification) => {
             if(verification){

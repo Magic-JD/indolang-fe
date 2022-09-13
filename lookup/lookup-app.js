@@ -42,8 +42,8 @@ function callToGetTranslation(){
 
 function getCorrectLanguageResponse(word){
     if(english){
-        return fetch('http://192.168.0.175:8080/lookup/english/'+word, config)
+        return fetch('https://indolang.herokuapp.com/lookup/english/'+word, config)
     } else {
-        return fetch('http://192.168.0.175:8080/lookup/indonesian/'+word, config)
+        return fetch('https://indolang.herokuapp.com/lookup/indonesian/'+word, config)
     }
 }
