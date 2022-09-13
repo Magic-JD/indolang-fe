@@ -39,8 +39,8 @@ function callToGetDictionary(){
 
 function getCorrectLanguage(){
     if(english){
-        return fetch('http://localhost:8080/dictionary/english', config)
+        return fetch('http://192.168.0.175:8080/dictionary/english', config)
     } else {
-        return fetch('http://localhost:8080/dictionary/indonesian', config)
+        return fetch('http://192.168.0.175:8080/dictionary/indonesian', config)
     }
 }

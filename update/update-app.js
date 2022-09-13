@@ -26,7 +26,7 @@ function updateDictionary(englishWord, indonesianWord){
         indonesianWords: [indonesianWord]
     }
     configPost.body = JSON.stringify(json);
-    fetch('http://localhost:8080/update/user', configPost)
+    fetch('http://192.168.0.175:8080/update/user', configPost)
         .then((response) => response.text())
         .then((verification) => {
             if(verification){

@@ -19,7 +19,7 @@ let configPost = {
 setWord()
 
 function setWord() {
-    fetch('http://localhost:8080/test/indonesian', configGet)
+    fetch('http://192.168.0.175:8080/test/indonesian', configGet)
         .then((response) => response.text())
         .then((testWord) => document.getElementById('tested-word').textContent = testWord);
 }
@@ -30,7 +30,7 @@ document.getElementById('enter-word-button').addEventListener('click', () => {
         answer: document.getElementById('answer-field').value
     }
     configPost.body = JSON.stringify(json);
-    fetch('http://localhost:8080/test/indonesian', configPost)
+    fetch('http://192.168.0.175:8080/test/indonesian', configPost)
         .then((response) => response.text())
         .then((verification) => {
             document.getElementById('test-result').textContent = verification;
