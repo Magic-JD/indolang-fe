@@ -28,7 +28,7 @@ getTranslation.addEventListener('click', () => callToGetTranslation());
 
 function callToGetTranslation(){
     var textBox = document.getElementById("translate");
-    var word = textBox.value;
+    var word = textBox.value.toLowerCase();
     getCorrectLanguageResponse(word)
         .then((response) => {
             console.log(response)
